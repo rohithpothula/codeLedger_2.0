@@ -8,8 +8,7 @@ public class Person implements Comparable<Person>{
     public Person(int age, String name, String profession) {
         this.age = age;
         this.name = name;
-        this.profe
-    ssion = profession;
+        this.profession = profession;
     }
 
     @Override
