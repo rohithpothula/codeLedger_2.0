@@ -44,6 +44,9 @@ public class LRUCacheAdv {
             if(this.currSize>=this.maxSize){
                 removeLRUAdv();
             }
+
+
+
             CacheNode insertNode = new CacheNode(key,value);
             value_map.put(key,insertNode);
 

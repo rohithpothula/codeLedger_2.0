@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/DecoratorDesingPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DecoratorDesingPattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HashMapImplementation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HashMapImplementation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/LRUCacheImplementation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/LRUCacheImplementation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SingletonDesingPattern/src/main/java" charset="UTF-8" />
