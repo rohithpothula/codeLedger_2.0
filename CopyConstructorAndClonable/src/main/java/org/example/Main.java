@@ -11,7 +11,7 @@ public class Main {
         System.out.println(c1.price);
 
 
-        System.out.println("**********************************")
+        System.out.println("**********************************");
         House h = new House("Jubliee Hilss",199999999,"1-1/3");
         House h1 = h.clone();
         System.out.println(h1.area);
