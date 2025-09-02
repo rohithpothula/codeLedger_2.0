@@ -21,10 +21,17 @@ public class Main {
 //        here there will be a method we have to override we have to make changes in that compareTo method
 
 
-        Comparator<Car> carComparator = (c1,c2)-> c2.id-c1.id;
+        Comparator<Car> carComparator = (c1,c2)-> {
+            int flag = c1.name.compareTo(c2.name);
+            if(flag==0){
+                return c2.id-c1.id;
+            }
+            return flag;
+        };
         Car[] carsArray = {new Car(1,"Red","Ultimate","Ferrari",99999999.0, LocalDate.of(2027, 1, 1)),
                 new Car(2,"white","Beast","Rolls Royace",999999999.0, LocalDate.of(2028, 1, 1)),
-                new Car(3,"Black","Diamond","BMW",999999999.0, LocalDate.of(2029, 1, 1))};
+                new Car(3,"Black","Diamond","BMW",999999999.0, LocalDate.of(2029, 1, 1)),
+                new Car(8,"Black","Diamond","BMW",999999998.0, LocalDate.of(2029, 1, 1))};
         Arrays.sort(carsArray,carComparator);
         List<Car> carList = Arrays.asList(carsArray);
 //        Collections.sort(carList, new Comparator<Car>() {
@@ -50,14 +57,14 @@ public class Main {
 
         Comparator<Car> carComparator1= Comparator.comparingInt((Car c1) -> c1.id).thenComparing((Car c1)-> c1.name).reversed();
         Collections.sort(carList,carComparator1);
-        System.out.println(carList);
+//        System.out.println(carList);
 
 
-        Car c1 = new Car();
-        Car c2 = new Car();
-
-        if(c1.equals(c2)){
-
-        }
+//        Car c1 = new Car();
+//        Car c2 = new Car();
+//
+//        if(c1.equals(c2)){
+//
+//        }
     }
 }
