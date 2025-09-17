@@ -1,11 +1,12 @@
 package org.example;
 
+import org.example.DeadLock.DLSharedResource;
 import org.example.ProducerConsumer.PCSharedResource;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.out.println(Thread.currentThread().getName());
 
         Runnable runnableobj = new RunnableClass();
@@ -79,7 +80,32 @@ public class Main {
             }
         });
 
-        pcProducer.start();
-        pcConsumer.start();
+//        pcProducer.start();
+//        pcConsumer.start();
+
+        DLSharedResource dlSharedResource = new DLSharedResource();
+
+        Thread resource1Thread = new Thread(()->{
+            try {
+//                Thread.sleep(2000);
+                dlSharedResource.task1();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+        Thread resource2Thread = new Thread(()->{
+            try {
+//                Thread.sleep(2000);
+                dlSharedResource.task2();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+
+        resource1Thread.start();
+        resource2Thread.start();
+
     }
 }
