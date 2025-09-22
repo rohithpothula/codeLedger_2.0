@@ -1,6 +1,6 @@
-package org.example;
+package org.example.caluculator;
 
-public class AddNumbers implements Chain{
+public class AddNumbers implements Chain {
 
     private Chain nextChain;
     @Override

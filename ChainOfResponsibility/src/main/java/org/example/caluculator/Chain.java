@@ -1,4 +1,4 @@
-package org.example;
+package org.example.caluculator;
 
 public interface Chain {
 
