@@ -1,70 +1,69 @@
 package org.example;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Person[] employees = {new Person(30,"Rohith","CEO"),
-                              new Person(28,"Shiva","CFO"),
-                            new Person(56,"Nagesh","HR Head")};
-        Arrays.sort(employees);
-        System.out.println(Arrays.toString(employees));
-
-//        When we use comparable there will be natural ordering of objects
-//        this comparable we can use when we have authority to change the class defination
-//        here there will be a method we have to override we have to make changes in that compareTo method
 
 
-        Comparator<Car> carComparator = (c1,c2)-> {
-            int flag = c1.name.compareTo(c2.name);
-            if(flag==0){
-                return c2.id-c1.id;
+
+
+        int[] arr1 = {1,2,3,4,5};
+        int[] arr2 = {2,3,5,6,7};
+
+
+        int n = arr1.length;
+        int m = arr2.length;
+        HashMap<Integer,Integer> mp = new HashMap<>();
+
+        for(int i=0;i<n;i++){
+            mp.put(arr1[i],mp.getOrDefault(arr1[i],0)+1);
+        }
+
+        for(int i=0;i<m;i++){
+            if(mp.containsKey(arr2[i])){
+//                System.out.println(arr2[i]);
             }
-            return flag;
-        };
-        Car[] carsArray = {new Car(1,"Red","Ultimate","Ferrari",99999999.0, LocalDate.of(2027, 1, 1)),
-                new Car(2,"white","Beast","Rolls Royace",999999999.0, LocalDate.of(2028, 1, 1)),
-                new Car(3,"Black","Diamond","BMW",999999999.0, LocalDate.of(2029, 1, 1)),
-                new Car(8,"Black","Diamond","BMW",999999998.0, LocalDate.of(2029, 1, 1))};
-        Arrays.sort(carsArray,carComparator);
-        List<Car> carList = Arrays.asList(carsArray);
-//        Collections.sort(carList, new Comparator<Car>() {
-//            @Override
-//            public int compare(Car o1, Car o2) {
-//                return o2.id-o1.id;
-//            }
-//        });
-
-        System.out.println(carList);
-
-//        Collections.sort(carList, new Comparator<Car>() {
-//            @Override
-//            public int compare(Car o1, Car o2) {
-//                if(o1.name.compareTo(o2.name)>0)return -1;
-//                else if(o1.name.equals(o2.name)) return 0;
-//                else return 1;
-////                return o2.name-o1.name;
-//            }
-//        });
-
-//        System.out.println((Arrays.toString(carsArray)));
-
-        Comparator<Car> carComparator1= Comparator.comparingInt((Car c1) -> c1.id).thenComparing((Car c1)-> c1.name).reversed();
-        Collections.sort(carList,carComparator1);
-//        System.out.println(carList);
+        }
 
 
-//        Car c1 = new Car();
-//        Car c2 = new Car();
-//
-//        if(c1.equals(c2)){
-//
-//        }
+        int arr[]={1,2,3,4,5,6,-1};
+
+      int slow  = 0;
+      int fast = 1;
+
+      while(arr[fast]!=-1){
+
+          fast = fast+1;
+          if(arr[fast]==-1){
+              System.out.println(arr[slow+1]);
+              return ;
+          }
+          else{
+              fast=fast+1;
+          }
+          slow = slow+1;
+      }
+
+      System.out.println(arr[slow]);
+
     }
+
+    List<String> names = Arrays.asList("pranika","alex","john","pranika","alex","pranika");
+
+    Map<String,Integer> nameCount = new HashMap<>();
+
+    for(int i=0;i<names.size();i++){
+
+    }
+
+
+
+
+
+
+
 }

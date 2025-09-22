@@ -1,6 +1,8 @@
 package org.example;
 
-public class PaymentStrategy {
+import java.io.Serializable;
+
+public class PaymentStrategy implements Serializable {
 
     public PaymentSystem paymentSystem;
 
@@ -11,4 +13,8 @@ public class PaymentStrategy {
     public void executePayment(){
         this.paymentSystem.pay();
     }
+
+
+
+
 }

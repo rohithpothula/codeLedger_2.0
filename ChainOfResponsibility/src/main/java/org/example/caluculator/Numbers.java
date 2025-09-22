@@ -1,4 +1,4 @@
-package org.example;
+package org.example.caluculator;
 
 public class Numbers {
     private int number1;

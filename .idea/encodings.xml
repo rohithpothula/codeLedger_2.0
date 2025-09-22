@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ChainOfResponsibility/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChainOfResponsibility/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DecoratorDesingPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DecoratorDesingPattern/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HashMapImplementation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HashMapImplementation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/LRUCacheImplementation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/LRUCacheImplementation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MulthiThreading/dd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MulthiThreading/dd/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MulthiThreading/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MulthiThreading/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SingletonDesingPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SingletonDesingPattern/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/StrategyDesignPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/StrategyDesignPattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Streams/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Streams/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/comparator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/comparator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

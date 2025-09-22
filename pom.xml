@@ -15,6 +15,9 @@
         <module>StrategyDesignPattern</module>
         <module>LRUCacheImplementation</module>
         <module>HashMapImplementation</module>
+        <module>MulthiThreading</module>
+        <module>Streams</module>
+        <module>ChainOfResponsibility</module>
     </modules>
 
     <properties>

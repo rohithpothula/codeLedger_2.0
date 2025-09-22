@@ -1,6 +1,6 @@
-package org.example;
+package org.example.caluculator;
 
-public class SubNumbers implements Chain{
+public class MultiplyNumbers implements Chain {
 
     private Chain nextChain;
 
@@ -11,10 +11,10 @@ public class SubNumbers implements Chain{
 
     @Override
     public void caluculate(Numbers request) {
-        if(request.getCaluculationWanted().equals("sub")){
-            System.out.println("SubractNumbers:" + (request.getNumber1()-request.getNumber2()));
+        if(request.getCaluculationWanted().equals("mult")){
+            System.out.println(request.getNumber1()*request.getNumber2());
         }
-        else{
+        else {
             if (nextChain != null) {
                 nextChain.caluculate(request);
             } else {

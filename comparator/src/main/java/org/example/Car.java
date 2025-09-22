@@ -28,12 +28,23 @@ public class Car {
         return id + ": " + name + ": " + color + ": " + model + ": " + price;
     }
 
-    public boolean equals(Car o){
+
+    @Override
+    public boolean equals(Object o){
         if(this==o) return true;
         if(o==null || (o.getClass()!=getClass())) return false;
 
-        if(this.name.equals(o.name) && (this.id==o.id)) return true;
+        Car c = (Car) o;
+
+        if(this.name.equals(c.name) && (this.id==c.id)) return true;
         else return false;
 
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Integer.hashCode(id);
+        result = 31 * result + name.hashCode();
+        return result;
     }
 }
